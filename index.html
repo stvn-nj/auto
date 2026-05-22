@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro y Árboles</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:#dcdcdc;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.contenedor{
+    width:400px;
+    height:700px;
+    border:8px solid black;
+    background:#efefef;
+    position:relative;
+    overflow:hidden;
+}
+.sol{
+    width:90px;
+    height:90px;
+    background:gold;
+    border-radius:50%;
+    position:absolute;
+    top:40px;
+    right:50px;
+}
+.nube1{
+    width:120px;
+    height:50px;
+    background:skyblue;
+    border-radius:50px;
+    position:absolute;
+    top:80px;
+    left:40px;
+}
+.nube2{
+    width:90px;
+    height:40px;
+    background:skyblue;
+    border-radius:50px;
+    position:absolute;
+    top:140px;
+    right:40px;
+}
+.arbol1{
+    width:120px;
+    height:220px;
+    background:green;
+    clip-path: polygon(50% 0%,0% 35%,25% 35%,5% 60%,30% 60%,10% 100%,90% 100%,70% 60%,95% 60%,75% 35%,100% 35%);
+    position:absolute;
+    top:180px;
+    left:20px;
+}
+.tronco1{
+    width:30px;
+    height:70px;
+    background:brown;
+    position:absolute;
+    top:360px;
+    left:65px;
+}
+.arbol2{
+    width:120px;
+    height:220px;
+    background:green;
+    clip-path: polygon(50% 0%,0% 35%,25% 35%,5% 60%,30% 60%,10% 100%,90% 100%,70% 60%,95% 60%,75% 35%,100% 35%);
+    position:absolute;
+    top:180px;
+    right:20px;
+}
+.tronco2{
+    width:30px;
+    height:70px;
+    background:brown;
+    position:absolute;
+    top:360px;
+    right:65px;
+}
+.carro{
+    width:220px;
+    height:90px;
+    background:red;
+    position:absolute;
+    bottom:140px;
+    left:90px;
+    clip-path: polygon(10% 100%,0% 60%,20% 50%,40% 0%,80% 0%,100% 50%,100% 100%);
+}
+.ventana1{
+    width:70px;
+    height:45px;
+    background:#0077cc;
+    position:absolute;
+    bottom:195px;
+    left:135px;
+    clip-path: polygon(15% 100%,0% 100%,20% 0%,100% 0%,100% 100%);
+}
+.ventana2{
+    width:70px;
+    height:45px;
+    background:#0077cc;
+    position:absolute;
+    bottom:195px;
+    left:210px;
+    clip-path: polygon(0% 0%,80% 0%,100% 100%,0% 100%);
+}
+.llanta1,
+.llanta2{
+    width:50px;
+    height:50px;
+    background:black;
+    border-radius:50%;
+    position:absolute;
+    bottom:110px;
+}
+.llanta1{
+    left:110px;
+}
+.llanta2{
+    right:110px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <div class="sol"></div>
+    <div class="nube1"></div>
+    <div class="nube2"></div>
+    <div class="arbol1"></div>
+    <div class="tronco1"></div>
+    <div class="arbol2"></div>
+    <div class="tronco2"></div>
+    <div class="carro"></div>
+    <div class="ventana1"></div>
+    <div class="ventana2"></div>
+    <div class="llanta1"></div>
+    <div class="llanta2"></div>
+
+</div>
+
+</body>
+</html>
